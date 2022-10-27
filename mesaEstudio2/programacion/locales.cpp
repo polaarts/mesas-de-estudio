@@ -6,11 +6,11 @@ Cada producto tiene un nombre (string), un precio (int) y una categoría (string
 Cree un programa que, usando funciones, cree dos locales Recoleta y 
 La Florida y en cada uno de ellos agregue 5 productos:
 
-1. Mackbook Pro 13' M2 - $ 1.230.000 - Categoría: Notebooks
-2. iPhone 12 Pro Max - $ 1.100.000 - Categoría: Celulares
-3. Lenovo Ryzen 5 - $ 350.000 - Categoría: Notebooks
-4. Samsung Galaxy Tab S7 - $ 1.200.000 - Categoría: Tablets
-5. iPad Pro 2021 - $ 1.100.000 - Categoría: Tablets
+1. Mackbook - $ 1.230.000 - Categoría: Notebooks
+2. iPhone - $ 1.100.000 - Categoría: Celulares
+3. Lenovo - $ 350.000 - Categoría: Notebooks
+4. Samsung - $ 1.200.000 - Categoría: Tablets
+5. iPad - $ 1.100.000 - Categoría: Tablets
 
 Al finalizar su programa, debe mostrar todos los porductos por categoría y por local, usando funciones.
 */
@@ -36,7 +36,7 @@ Columnas: Nombre, Precio, Categoría
 using namespace std;
 
 //PAUTA
-/*
+
 
 void agregarProductos(string matriz[][3], int cantidad) {
     for(int i = 0; i < cantidad; i++) {
@@ -68,7 +68,22 @@ void mostrarProductosPorCategoria(string matriz[][3], int cantidad) {
                 cout << "Nombre: " << matriz[j][0] << endl;
                 cout << "Precio: " << matriz[j][1] << endl;
                 cout << "Categoria: " << matriz[j][2] << endl;
+                cout << endl;
             }
+        }
+    }
+}
+
+void mostrarProductosPorLocal(string matriz[][3], int cantidad) {
+    string locales[2] = {"Recoleta", "La Florida"};
+    for(int i = 0; i < 2; i++) {
+        cout << "Local: " << locales[i] << endl;
+        for(int j = 0; j < cantidad; j++) {
+            cout << "Producto " << j + 1 << endl;
+            cout << "Nombre: " << matriz[i][j][0] << endl;
+            cout << "Precio: " << matriz[i][j][1] << endl;
+            cout << "Categoria: " << matriz[i][j][2] << endl;
+            cout << endl;
         }
     }
 }
@@ -83,10 +98,9 @@ int main() {
     agregarProductos(recoleta, cantidad);
     printf("Local La Florida:\n");
     agregarProductos(laFlorida, cantidad);
-    printf("Productos de Recoleta:\n");
-    mostrarProductosPorCategoria(recoleta, cantidad);
-    printf("Productos de La Florida:\n");
-    mostrarProductosPorCategoria(laFlorida, cantidad);
+    cout << endl;
+    mostrarProductosPorLocal(recoleta, cantidad);
+    cout << endl;
+    mostrarProductosPorLocal(laFlorida, cantidad);
     return 0;
 }
-*/
