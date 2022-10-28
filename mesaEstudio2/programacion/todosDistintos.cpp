@@ -12,7 +12,6 @@ True
 #include <iostream>
 using namespace std;
 
-//PAUTA
 /*
 
 

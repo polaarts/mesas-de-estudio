@@ -39,7 +39,6 @@ Campeon: Djokovic
 using namespace std;
 
 
-//PAUTA
 /*
 
 

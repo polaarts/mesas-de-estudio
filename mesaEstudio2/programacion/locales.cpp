@@ -7,14 +7,13 @@ Cree un programa que, usando funciones, cree dos locales Recoleta y
 La Florida y en cada uno de ellos agregue 5 productos:
 
 1. Mackbook - $ 1.230.000 - Categoría: Notebooks
-2. iPhone - $ 1.100.000 - Categoría: Celulares
+2. IPhone - $ 1.100.000 - Categoría: Celulares
 3. Lenovo - $ 350.000 - Categoría: Notebooks
 4. Samsung - $ 1.200.000 - Categoría: Tablets
 5. iPad - $ 1.100.000 - Categoría: Tablets
 
 Al finalizar su programa, debe mostrar todos los porductos por categoría y por local, usando funciones.
 */
-
 
 /*
 
@@ -31,13 +30,10 @@ Columnas: Nombre, Precio, Categoría
 
 */
 
-
 #include <iostream>
 using namespace std;
 
-//PAUTA
-
-
+/*
 void agregarProductos(string matriz[][3], int cantidad) {
     for(int i = 0; i < cantidad; i++) {
         cout << "Ingrese nombre del producto " << i + 1 << endl;
@@ -104,3 +100,5 @@ int main() {
     mostrarProductosPorLocal(laFlorida, cantidad);
     return 0;
 }
+
+*/
