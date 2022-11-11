@@ -7,7 +7,6 @@ y un metodo imprimir que imprime las edades de las personas en el orden en el cu
 
 #include <iostream>
 #include <queue>
-#include <list>
 using namespace std;
 
 class Persona
